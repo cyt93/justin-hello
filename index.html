@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="一个给 Justin 的小小欢迎页。" />
+    <title>Justin，你好</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="glow glow-one" aria-hidden="true"></div>
+    <div class="glow glow-two" aria-hidden="true"></div>
+
+    <main class="shell">
+      <nav class="nav" aria-label="主导航">
+        <a class="brand" href="." aria-label="返回首页"><span class="brand-dot"></span>justin-hello</a>
+        <span class="nav-note">made with good energy ✦</span>
+      </nav>
+
+      <section class="hero" aria-labelledby="greeting">
+        <div class="eyebrow"><span class="spark">✦</span> A little hello, made for you</div>
+        <h1 id="greeting">Justin，<br /><span>你好！</span></h1>
+        <p class="intro">愿今天有一点轻松，<br />也有很多值得期待的好事发生。</p>
+        <button class="hello-button" id="helloButton" type="button">
+          <span>收下这句问候</span><span class="button-arrow">↗</span>
+        </button>
+        <p class="message" id="message" role="status" aria-live="polite">点击按钮，领取一份好心情。</p>
+      </section>
+
+      <footer class="footer">
+        <span>今天也要闪闪发光</span>
+        <span class="footer-line"></span>
+        <span>01 / 01</span>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
